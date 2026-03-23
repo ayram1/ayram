@@ -15,16 +15,16 @@
 
         body {
             font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, sans-serif;
-            background-color: #ffffff;
-            color: #111111;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
             line-height: 1.5;
         }
 
-        /* Header y Navegación */
+        /* Header y Navegación - Modo oscuro */
         .navbar {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(10, 10, 10, 0.95);
             backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(7, 231, 242, 0.2);
             position: fixed;
             width: 100%;
             top: 0;
@@ -45,7 +45,7 @@
             font-size: 1.5rem;
             font-weight: 700;
             letter-spacing: -0.5px;
-            background: linear-gradient(135deg, #111111 0%, #07e7f2 100%);
+            background: linear-gradient(135deg, #ffffff 0%, #07e7f2 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -59,7 +59,7 @@
 
         .nav-links a {
             text-decoration: none;
-            color: #111111;
+            color: #e5e5e5;
             font-weight: 500;
             transition: all 0.3s;
             position: relative;
@@ -88,7 +88,7 @@
         .lang-switch {
             display: flex;
             gap: 0.5rem;
-            background: #f5f5f5;
+            background: #1f1f1f;
             padding: 0.3rem;
             border-radius: 40px;
         }
@@ -101,12 +101,12 @@
             cursor: pointer;
             font-weight: 500;
             transition: all 0.3s;
-            color: #111;
+            color: #e5e5e5;
         }
 
         .lang-btn.active {
             background: #07e7f2;
-            color: #111;
+            color: #0a0a0a;
         }
 
         .lang-btn:hover:not(.active) {
@@ -134,7 +134,7 @@
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 1.5rem;
-            color: #111111;
+            color: #ffffff;
         }
 
         .hero-content h1 .highlight {
@@ -145,13 +145,13 @@
 
         .hero-content p {
             font-size: 1.2rem;
-            color: #4b5563;
+            color: #a0a0a0;
             margin-bottom: 2rem;
         }
 
         .chromis-badge {
             display: inline-block;
-            background: #f5f5f5;
+            background: rgba(7, 231, 242, 0.15);
             padding: 0.3rem 1rem;
             border-radius: 40px;
             font-size: 0.85rem;
@@ -179,7 +179,7 @@
 
         .stat-label {
             font-size: 0.85rem;
-            color: #6b7280;
+            color: #a0a0a0;
             letter-spacing: 0.5px;
         }
 
@@ -191,7 +191,7 @@
         .hero-image svg {
             max-width: 100%;
             height: auto;
-            filter: drop-shadow(0 10px 20px rgba(7, 231, 242, 0.2));
+            filter: drop-shadow(0 10px 20px rgba(7, 231, 242, 0.3));
         }
 
         /* Botones */
@@ -209,30 +209,30 @@
         }
 
         .btn-primary {
-            background: #111111;
-            color: white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: #07e7f2;
+            color: #0a0a0a;
+            box-shadow: 0 4px 15px rgba(7, 231, 242, 0.3);
         }
 
         .btn-primary:hover {
-            background: #07e7f2;
-            color: #111111;
+            background: #ffffff;
+            color: #0a0a0a;
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(7, 231, 242, 0.3);
+            box-shadow: 0 8px 25px rgba(7, 231, 242, 0.4);
         }
 
         .btn-secondary {
             background: transparent;
-            color: #111111;
-            border: 2px solid #111111;
+            color: #e5e5e5;
+            border: 2px solid #07e7f2;
             margin-left: 1rem;
         }
 
         .btn-secondary:hover {
-            background: #111111;
-            color: white;
+            background: #07e7f2;
+            color: #0a0a0a;
             transform: translateY(-2px);
-            border-color: #111111;
+            border-color: #07e7f2;
         }
 
         /* Sección de características */
@@ -245,12 +245,12 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #111111;
+            color: #ffffff;
         }
 
         .section-subtitle {
             text-align: center;
-            color: #6b7280;
+            color: #a0a0a0;
             margin-bottom: 3rem;
             font-size: 1.1rem;
         }
@@ -266,18 +266,18 @@
         }
 
         .feature-card {
-            background: #ffffff;
+            background: #1a1a1a;
             padding: 2rem;
             border-radius: 24px;
             transition: all 0.3s;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(7, 231, 242, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .feature-card:hover {
             transform: translateY(-8px);
             border-color: #07e7f2;
-            box-shadow: 0 20px 30px -15px rgba(7, 231, 242, 0.15);
+            box-shadow: 0 20px 30px -15px rgba(7, 231, 242, 0.2);
         }
 
         .feature-icon {
@@ -288,14 +288,50 @@
 
         .feature-card h3 {
             margin-bottom: 0.8rem;
-            color: #111111;
+            color: #ffffff;
             font-size: 1.3rem;
             font-weight: 600;
         }
 
         .feature-card p {
-            color: #4b5563;
+            color: #b0b0b0;
             font-size: 0.95rem;
+        }
+
+        /* Video Tutorial Section */
+        .video-tutorial {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+            border-radius: 32px;
+            padding: 3rem;
+            margin: 4rem 0;
+            border: 1px solid rgba(7, 231, 242, 0.3);
+            text-align: center;
+        }
+
+        .video-tutorial h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 20px;
         }
 
         /* Galería de imágenes */
@@ -305,14 +341,14 @@
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
 
         .gallery-item {
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s;
             cursor: pointer;
         }
@@ -323,51 +359,51 @@
 
         .gallery-item img {
             width: 100%;
-            height: 220px;
+            height: 200px;
             object-fit: cover;
             display: block;
         }
 
         /* Kitchen Preview Section */
         .kitchen-preview {
-            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            background: #1a1a1a;
             border-radius: 32px;
-            padding: 3rem;
+            padding: 2.5rem;
             margin: 4rem 0;
             border: 1px solid rgba(7, 231, 242, 0.3);
         }
 
         .kitchen-preview h3 {
             font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: #111;
+            margin-bottom: 1rem;
+            color: #ffffff;
         }
 
         .kitchen-features {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 1rem;
             margin: 1.5rem 0;
         }
 
         .kitchen-feature {
-            background: white;
+            background: #0f0f0f;
             padding: 0.8rem;
             border-radius: 12px;
             text-align: center;
             font-size: 0.9rem;
             font-weight: 500;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border: 1px solid rgba(7, 231, 242, 0.2);
         }
 
         /* Crypto Wallets */
         .crypto-section {
-            background: #111111;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
             border-radius: 32px;
             padding: 2.5rem;
             margin: 4rem 0;
             text-align: center;
-            color: white;
+            border: 1px solid rgba(7, 231, 242, 0.3);
         }
 
         .crypto-section h3 {
@@ -385,31 +421,34 @@
         }
 
         .wallet {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
             padding: 1.5rem;
             border-radius: 20px;
             min-width: 280px;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(7, 231, 242, 0.2);
         }
 
         .wallet h4 {
             margin-bottom: 0.8rem;
             font-size: 1.3rem;
+            color: #07e7f2;
         }
 
         .wallet p {
             font-family: monospace;
             font-size: 0.85rem;
             word-break: break-all;
-            background: rgba(0,0,0,0.3);
+            background: rgba(0,0,0,0.5);
             padding: 0.8rem;
             border-radius: 12px;
             margin-top: 0.5rem;
+            color: #e5e5e5;
         }
 
         .copy-btn {
             background: #07e7f2;
-            color: #111;
+            color: #0a0a0a;
             border: none;
             padding: 0.4rem 1rem;
             border-radius: 30px;
@@ -420,7 +459,7 @@
         }
 
         .copy-btn:hover {
-            background: white;
+            background: #ffffff;
         }
 
         /* Buy Me a Coffee Section */
@@ -428,24 +467,24 @@
             text-align: center;
             margin: 3rem 0;
             padding: 2rem;
-            background: #f5f5f5;
+            background: #1a1a1a;
             border-radius: 32px;
+            border: 1px solid rgba(7, 231, 242, 0.2);
         }
 
         /* Sección de próximamente */
         .coming-soon {
-            background: #111111;
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
             border-radius: 32px;
             padding: 3rem;
             text-align: center;
-            color: white;
             margin: 4rem 0;
-            border: 1px solid rgba(7, 231, 242, 0.2);
+            border: 1px solid rgba(7, 231, 242, 0.3);
         }
 
         .btn-notify {
             background: #07e7f2;
-            color: #111111;
+            color: #0a0a0a;
             padding: 0.9rem 2rem;
             border-radius: 50px;
             border: none;
@@ -457,7 +496,7 @@
         }
 
         .btn-notify:hover {
-            background: white;
+            background: #ffffff;
             transform: scale(1.02);
         }
 
@@ -470,13 +509,13 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.95);
             backdrop-filter: blur(5px);
         }
         
         .modal-content {
             position: relative;
-            background-color: #fff;
+            background-color: #1a1a1a;
             margin: 5% auto;
             padding: 0;
             width: 90%;
@@ -495,12 +534,12 @@
             position: absolute;
             top: 15px;
             right: 25px;
-            color: #111;
+            color: #fff;
             font-size: 35px;
             font-weight: bold;
             cursor: pointer;
             z-index: 10;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(0,0,0,0.6);
             width: 35px;
             height: 35px;
             border-radius: 50%;
@@ -511,6 +550,7 @@
         
         .close-modal:hover {
             background: #07e7f2;
+            color: #0a0a0a;
         }
         
         .modal-img {
@@ -534,20 +574,22 @@
         }
 
         .tech-badge {
-            background: #f5f5f5;
+            background: #1f1f1f;
             padding: 0.5rem 1.2rem;
             border-radius: 40px;
             font-size: 0.9rem;
             font-weight: 500;
+            color: #e5e5e5;
         }
 
         /* Footer */
         .footer {
-            background: #111111;
-            color: #ffffff;
+            background: #0a0a0a;
+            color: #a0a0a0;
             text-align: center;
             padding: 2rem;
             margin-top: 2rem;
+            border-top: 1px solid rgba(7, 231, 242, 0.2);
         }
 
         /* Responsive */
@@ -565,6 +607,7 @@
             .crypto-section { padding: 1.5rem; }
             .wallet p { font-size: 0.7rem; }
             .kitchen-preview { padding: 1.5rem; }
+            .video-tutorial { padding: 1.5rem; }
         }
 
         /* Language visibility */
@@ -573,9 +616,6 @@
         }
         .lang-es.active-lang, .lang-en.active-lang {
             display: block;
-        }
-        .lang-es.inline-active, .lang-en.inline-active {
-            display: inline;
         }
         .hero-stats .lang-es, .hero-stats .lang-en {
             display: block;
@@ -590,6 +630,7 @@
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#caracteristicas">Características</a></li>
+                    <li><a href="#video">Tutorial</a></li>
                     <li><a href="#galeria">Galería</a></li>
                     <li><a href="#donaciones">Donaciones</a></li>
                 </ul>
@@ -611,8 +652,8 @@
                 <p class="lang-es active-lang">Gestión de mesas, pedidos en tiempo real, mensajería interna y pantalla de cocina. Diseñado como complemento gratuito para Chromis POS.</p>
                 <p class="lang-en">Table management, real-time orders, internal messaging, and kitchen display. Designed as a free add-on for Chromis POS.</p>
                 <div>
-                    <a href="#donaciones" class="btn btn-primary">Apoyar el proyecto</a>
-                    <a href="#galeria" class="btn btn-secondary">Ver capturas</a>
+                    <a href="#video" class="btn btn-primary">Ver tutorial</a>
+                    <a href="#donaciones" class="btn btn-secondary">Apoyar proyecto</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat"><div class="stat-number">100%</div><div class="stat-label lang-es active-lang">Gratuito</div><div class="stat-label lang-en">Free</div></div>
@@ -622,15 +663,26 @@
             </div>
             <div class="hero-image">
                 <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="80" y="120" width="240" height="200" rx="24" stroke="#07e7f2" stroke-width="2" fill="white"/>
+                    <rect x="80" y="120" width="240" height="200" rx="24" stroke="#07e7f2" stroke-width="2" fill="#1a1a1a"/>
                     <rect x="110" y="160" width="180" height="8" rx="4" fill="#07e7f2" fill-opacity="0.8"/>
-                    <rect x="110" y="190" width="180" height="8" rx="4" fill="#111111" fill-opacity="0.2"/>
-                    <rect x="110" y="220" width="180" height="8" rx="4" fill="#111111" fill-opacity="0.2"/>
-                    <rect x="110" y="250" width="120" height="8" rx="4" fill="#111111" fill-opacity="0.2"/>
-                    <circle cx="290" cy="280" r="16" fill="#07e7f2" stroke="white" stroke-width="2"/>
+                    <rect x="110" y="190" width="180" height="8" rx="4" fill="#ffffff" fill-opacity="0.2"/>
+                    <rect x="110" y="220" width="180" height="8" rx="4" fill="#ffffff" fill-opacity="0.2"/>
+                    <rect x="110" y="250" width="120" height="8" rx="4" fill="#ffffff" fill-opacity="0.2"/>
+                    <circle cx="290" cy="280" r="16" fill="#07e7f2" stroke="#1a1a1a" stroke-width="2"/>
                     <path d="M150 300 L250 300" stroke="#07e7f2" stroke-width="2" stroke-dasharray="6 6"/>
-                    <text x="165" y="330" font-size="12" fill="#111111" font-weight="bold">POS System</text>
+                    <text x="165" y="330" font-size="12" fill="#07e7f2" font-weight="bold">POS System</text>
                 </svg>
+            </div>
+        </section>
+
+        <!-- Video Tutorial Section -->
+        <section id="video" class="video-tutorial">
+            <h3 class="lang-es active-lang">📺 Tutorial: Cómo instalar y usar el sistema</h3>
+            <h3 class="lang-en">📺 Tutorial: How to install and use the system</h3>
+            <p class="lang-es active-lang">Aprende a levantar pedidos con Chromis POS desde tu celular o tablet</p>
+            <p class="lang-en">Learn how to place orders with Chromis POS from your phone or tablet</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/sh2l5bzmMiE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -717,7 +769,7 @@
             <p class="lang-es active-lang">Invítame un café y apoya el desarrollo</p>
             <p class="lang-en">Buy me a coffee and support development</p>
             <div style="display: flex; justify-content: center; margin-top: 1rem;">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ayram" data-color="#00d5ff" data-emoji="🍵" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00"></script>
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ayram" data-color="#07e7f2" data-emoji="🍵" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#FFFFFF" data-font-color="#000000" data-coffee-color="#FFDD00"></script>
             </div>
         </div>
 
@@ -741,23 +793,17 @@
                 <span class="tech-badge">REST API</span>
                 <span class="tech-badge">WebSockets</span>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.85rem; color: #6b7280;">Complemento gratuito para Chromis POS | Free add-on for Chromis POS</p>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: #a0a0a0;">Complemento gratuito para Chromis POS | Free add-on for Chromis POS</p>
         </div>
     </div>
 
     <!-- Modal para imágenes -->
     <div id="imageModal" class="modal">
         <div class="modal-content">
-            <span class="close-modal">&times;</span>
+            <span class="close-modal" id="closeImageModal">&times;</span>
             <img id="modalImage" class="modal-img" src="" alt="Screenshot">
         </div>
     </div>
-
-    <footer class="footer">
-        <p>&copy; 2026 Ayram Martinez — Desarrollador de Software</p>
-        <p style="margin-top: 0.6rem; font-size: 0.85rem;">Creando herramientas gratuitas para la industria gastronómica | Building free tools for the food & beverage industry</p>
-        <p style="margin-top: 0.6rem; font-size: 0.75rem;">BTC: 1DBbGNDA7BbitWsZwvEUJdHNMRrcNMpKfK | BCH: qryyz9u4hhs6f3e23hwe42fcfmw50pvknsftddzsqm</p>
-    </footer>
 
     <!-- Google Forms Modal -->
     <div id="googleFormModal" class="modal">
@@ -766,6 +812,12 @@
             <iframe id="googleFormIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdC8o7IQAEtnfw4RZNSrpz48EvOevg8fiTsSsuIr2UNH8dlmA/viewform?embedded=true" frameborder="0" style="width:100%; height:550px; border:none;"></iframe>
         </div>
     </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Ayram Martinez — Desarrollador de Software</p>
+        <p style="margin-top: 0.6rem; font-size: 0.85rem;">Creando herramientas gratuitas para la industria gastronómica | Building free tools for the food & beverage industry</p>
+        <p style="margin-top: 0.6rem; font-size: 0.75rem;">BTC: 1DBbGNDA7BbitWsZwvEUJdHNMRrcNMpKfK | BCH: qryyz9u4hhs6f3e23hwe42fcfmw50pvknsftddzsqm</p>
+    </footer>
 
     <script>
         // Language switcher
@@ -796,38 +848,27 @@
         });
         
         // Modal para imágenes
-        const modal = document.getElementById('imageModal');
+        const imageModal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
-        const closeModal = document.querySelector('#imageModal .close-modal');
+        const closeImageModal = document.getElementById('closeImageModal');
         
-        function openModal(imgSrc) {
-            modal.style.display = 'block';
+        window.openModal = function(imgSrc) {
+            imageModal.style.display = 'block';
             modalImg.src = imgSrc;
             document.body.style.overflow = 'hidden';
-        }
+        };
         
-        closeModal.onclick = () => {
-            modal.style.display = 'none';
+        closeImageModal.onclick = () => {
+            imageModal.style.display = 'none';
             document.body.style.overflow = 'auto';
         };
         
-        window.onclick = (event) => {
-            if (event.target === modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-            if (event.target === formModal) {
-                formModal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        };
-        
         // Copiar al portapapeles
-        function copyToClipboard(text) {
+        window.copyToClipboard = function(text) {
             navigator.clipboard.writeText(text).then(() => {
                 alert('✅ Dirección copiada / Address copied');
             });
-        }
+        };
         
         // Google Forms Modal
         const formModal = document.getElementById('googleFormModal');
@@ -844,6 +885,18 @@
             document.body.style.overflow = 'auto';
         };
         
+        // Cerrar modales al hacer clic fuera
+        window.onclick = (event) => {
+            if (event.target === imageModal) {
+                imageModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            if (event.target === formModal) {
+                formModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        };
+        
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -855,6 +908,6 @@
     </script>
     
     <!-- Buy Me a Coffee Widget -->
-    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ayram" data-description="Support me on Buy me a coffee!" data-message="" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ayram" data-description="Support me on Buy me a coffee!" data-message="" data-color="#07e7f2" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>
