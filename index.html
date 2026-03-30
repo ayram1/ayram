@@ -53,8 +53,9 @@
 
         .nav-links {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             list-style: none;
+            flex-wrap: wrap;
         }
 
         .nav-links a {
@@ -113,6 +114,22 @@
             background: rgba(7, 231, 242, 0.3);
         }
 
+        /* Social Icons */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .social-icon {
+            color: #e5e5e5;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            color: #07e7f2;
+        }
+
         /* Contenedor principal */
         .container {
             max-width: 1280px;
@@ -130,7 +147,7 @@
         }
 
         .hero-content h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 800;
             line-height: 1.2;
             margin-bottom: 1.5rem;
@@ -162,7 +179,7 @@
 
         .hero-stats {
             display: flex;
-            gap: 2.5rem;
+            gap: 2rem;
             margin-top: 2rem;
             flex-wrap: wrap;
         }
@@ -172,20 +189,14 @@
         }
 
         .stat-number {
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             font-weight: 800;
             color: #07e7f2;
         }
 
         .stat-label {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #a0a0a0;
-            letter-spacing: 0.5px;
-        }
-
-        .hero-image {
-            text-align: center;
-            position: relative;
         }
 
         .hero-image svg {
@@ -197,15 +208,14 @@
         /* Botones */
         .btn {
             display: inline-block;
-            padding: 0.9rem 2.2rem;
+            padding: 0.8rem 2rem;
             border-radius: 40px;
             text-decoration: none;
             font-weight: 600;
             transition: all 0.3s;
             cursor: pointer;
             border: none;
-            font-size: 1rem;
-            letter-spacing: 0.3px;
+            font-size: 0.95rem;
         }
 
         .btn-primary {
@@ -216,9 +226,7 @@
 
         .btn-primary:hover {
             background: #ffffff;
-            color: #0a0a0a;
             transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(7, 231, 242, 0.4);
         }
 
         .btn-secondary {
@@ -231,8 +239,6 @@
         .btn-secondary:hover {
             background: #07e7f2;
             color: #0a0a0a;
-            transform: translateY(-2px);
-            border-color: #07e7f2;
         }
 
         /* Sección de características */
@@ -242,7 +248,7 @@
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
             margin-bottom: 1rem;
             color: #ffffff;
@@ -252,7 +258,6 @@
             text-align: center;
             color: #a0a0a0;
             margin-bottom: 3rem;
-            font-size: 1.1rem;
         }
 
         .section-title span {
@@ -261,8 +266,8 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
         }
 
         .feature-card {
@@ -273,44 +278,43 @@
             border: 1px solid rgba(7, 231, 242, 0.1);
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
+        
 
-        .feature-card:hover {
+       .feature-card:hover {
             transform: translateY(-8px);
             border-color: #07e7f2;
             box-shadow: 0 20px 30px -15px rgba(7, 231, 242, 0.2);
         }
 
         .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            display: inline-block;
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
         }
 
         .feature-card h3 {
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
             color: #ffffff;
-            font-size: 1.3rem;
-            font-weight: 600;
+            font-size: 1.2rem;
         }
 
         .feature-card p {
             color: #b0b0b0;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
         }
 
-        /* Video Tutorial Section */
+        /* Video Section */
         .video-tutorial {
             background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
             border-radius: 32px;
-            padding: 3rem;
+            padding: 2rem;
             margin: 4rem 0;
             border: 1px solid rgba(7, 231, 242, 0.3);
             text-align: center;
         }
 
         .video-tutorial h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
             color: #ffffff;
         }
 
@@ -320,8 +324,7 @@
             height: 0;
             overflow: hidden;
             border-radius: 20px;
-            margin-top: 2rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-top: 1.5rem;
         }
 
         .video-container iframe {
@@ -334,7 +337,7 @@
             border-radius: 20px;
         }
 
-        /* Galería de imágenes */
+        /* Galería completa */
         .gallery {
             margin: 5rem 0;
         }
@@ -364,18 +367,18 @@
             display: block;
         }
 
-        /* Kitchen Preview Section */
+        /* Kitchen Preview */
         .kitchen-preview {
             background: #1a1a1a;
             border-radius: 32px;
-            padding: 2.5rem;
+            padding: 2rem;
             margin: 4rem 0;
             border: 1px solid rgba(7, 231, 242, 0.3);
         }
 
         .kitchen-preview h3 {
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
             color: #ffffff;
         }
 
@@ -396,87 +399,78 @@
             border: 1px solid rgba(7, 231, 242, 0.2);
         }
 
-        /* Crypto Wallets */
-        .crypto-section {
-            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+        /* Sección de donaciones - Fondo blanco para resaltar */
+        .crypto-section, .coffee-section {
+            background: #ffffff;
             border-radius: 32px;
-            padding: 2.5rem;
-            margin: 4rem 0;
+            padding: 2rem;
+            margin: 3rem 0;
             text-align: center;
-            border: 1px solid rgba(7, 231, 242, 0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        .crypto-section h3 {
+        .crypto-section h3, .coffee-section h3 {
+            color: #0a0a0a;
             font-size: 1.8rem;
             margin-bottom: 1rem;
-            color: #07e7f2;
+        }
+
+        .crypto-section p, .coffee-section p {
+            color: #333;
         }
 
         .wallets {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
         }
 
         .wallet {
-            background: rgba(255,255,255,0.05);
-            padding: 1.5rem;
+            background: #f5f5f5;
+            padding: 1rem;
             border-radius: 20px;
-            min-width: 280px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(7, 231, 242, 0.2);
+            min-width: 260px;
+            border: 1px solid #07e7f2;
         }
 
         .wallet h4 {
-            margin-bottom: 0.8rem;
-            font-size: 1.3rem;
             color: #07e7f2;
+            margin-bottom: 0.5rem;
         }
 
         .wallet p {
             font-family: monospace;
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             word-break: break-all;
-            background: rgba(0,0,0,0.5);
-            padding: 0.8rem;
+            background: #e0e0e0;
+            padding: 0.5rem;
             border-radius: 12px;
-            margin-top: 0.5rem;
-            color: #e5e5e5;
+            color: #111;
         }
 
         .copy-btn {
             background: #07e7f2;
             color: #0a0a0a;
             border: none;
-            padding: 0.4rem 1rem;
+            padding: 0.3rem 1rem;
             border-radius: 30px;
-            margin-top: 0.8rem;
+            margin-top: 0.5rem;
             cursor: pointer;
             font-weight: 600;
-            transition: all 0.3s;
         }
 
         .copy-btn:hover {
-            background: #ffffff;
+            background: #0a0a0a;
+            color: #07e7f2;
         }
 
-        /* Buy Me a Coffee Section */
-        .coffee-section {
-            text-align: center;
-            margin: 3rem 0;
-            padding: 2rem;
-            background: #1a1a1a;
-            border-radius: 32px;
-            border: 1px solid rgba(7, 231, 242, 0.2);
-        }
-
-        /* Sección de próximamente */
+        /* Newsletter */
         .coming-soon {
             background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
             border-radius: 32px;
-            padding: 3rem;
+            padding: 2rem;
             text-align: center;
             margin: 4rem 0;
             border: 1px solid rgba(7, 231, 242, 0.3);
@@ -485,19 +479,57 @@
         .btn-notify {
             background: #07e7f2;
             color: #0a0a0a;
-            padding: 0.9rem 2rem;
-            border-radius: 50px;
+            padding: 0.8rem 1.5rem;
+            border-radius: 40px;
             border: none;
             font-weight: 700;
-            font-size: 1rem;
             cursor: pointer;
-            transition: all 0.3s;
             margin-top: 1rem;
         }
 
-        .btn-notify:hover {
-            background: #ffffff;
-            transform: scale(1.02);
+        .tech-stack {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .tech-badges {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .tech-badge {
+            background: #1f1f1f;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            background: #0a0a0a;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(7, 231, 242, 0.2);
+            color: #a0a0a0;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-social a {
+            color: #e5e5e5;
+            font-size: 1.3rem;
+            transition: color 0.3s;
+        }
+
+        .footer-social a:hover {
+            color: #07e7f2;
         }
 
         /* Modal */
@@ -509,131 +541,63 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.95);
-            backdrop-filter: blur(5px);
+            background: rgba(0,0,0,0.9);
         }
-        
         .modal-content {
             position: relative;
-            background-color: #1a1a1a;
             margin: 5% auto;
-            padding: 0;
             width: 90%;
-            max-width: 900px;
-            border-radius: 24px;
-            overflow: hidden;
-            animation: modalFadeIn 0.3s ease;
+            max-width: 800px;
         }
-        
-        @keyframes modalFadeIn {
-            from { opacity: 0; transform: translateY(-30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
         .close-modal {
             position: absolute;
-            top: 15px;
-            right: 25px;
-            color: #fff;
-            font-size: 35px;
-            font-weight: bold;
+            top: -40px;
+            right: 0;
+            color: white;
+            font-size: 30px;
             cursor: pointer;
-            z-index: 10;
-            background: rgba(0,0,0,0.6);
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
-        
-        .close-modal:hover {
-            background: #07e7f2;
-            color: #0a0a0a;
-        }
-        
         .modal-img {
             width: 100%;
-            height: auto;
-            display: block;
+            border-radius: 16px;
         }
 
-        /* Tech stack */
-        .tech-stack {
-            text-align: center;
-            padding: 2rem 0;
-        }
-
-        .tech-badges {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-
-        .tech-badge {
-            background: #1f1f1f;
-            padding: 0.5rem 1.2rem;
-            border-radius: 40px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: #e5e5e5;
-        }
-
-        /* Footer */
-        .footer {
-            background: #0a0a0a;
-            color: #a0a0a0;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 2rem;
-            border-top: 1px solid rgba(7, 231, 242, 0.2);
-        }
-
-        /* Responsive */
         @media (max-width: 768px) {
-            .hero {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: 2rem;
-            }
+            .hero { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
             .hero-content h1 { font-size: 2rem; }
-            .nav-container { flex-direction: column; gap: 1rem; }
-            .nav-links { gap: 1.5rem; }
-            .btn-secondary { margin-left: 0; margin-top: 1rem; }
-            .container { padding: 6rem 1.5rem 3rem; }
-            .crypto-section { padding: 1.5rem; }
-            .wallet p { font-size: 0.7rem; }
-            .kitchen-preview { padding: 1.5rem; }
-            .video-tutorial { padding: 1.5rem; }
+            .nav-container { flex-direction: column; gap: 0.5rem; }
+            .nav-links { gap: 1rem; justify-content: center; }
+            .btn-secondary { margin-left: 0; margin-top: 0.5rem; }
+            .container { padding: 6rem 1rem 2rem; }
+            .crypto-section, .coffee-section { padding: 1.5rem; }
+            .wallet p { font-size: 0.65rem; }
+            .gallery-item img { height: 160px; }
         }
 
-        /* Language visibility */
-        .lang-es, .lang-en {
-            display: none;
-        }
-        .lang-es.active-lang, .lang-en.active-lang {
-            display: block;
-        }
-        .hero-stats .lang-es, .hero-stats .lang-en {
-            display: block;
-        }
+        .lang-es, .lang-en { display: none; }
+        .lang-es.active-lang, .lang-en.active-lang { display: block; }
+        .hero-stats .lang-es, .hero-stats .lang-en { display: block; }
     </style>
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">AYRAM MARTINEZ</div>
-            <div style="display: flex; gap: 2rem; align-items: center;">
+            <div style="display: flex; gap: 1.5rem; align-items: center; flex-wrap: wrap;">
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#caracteristicas">Características</a></li>
-                    <li><a href="#video">Tutorial</a></li>
-                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#tutorial">Tutorial</a></li>
+                    <li><a href="#kitchen-video">Pantalla Cocina</a></li>
                     <li><a href="#donaciones">Donaciones</a></li>
                 </ul>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/LuxSystem1" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/luxsystem_1" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/luxsystem_1" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
                 <div class="lang-switch">
                     <button class="lang-btn active" data-lang="es">🇪🇸 ES</button>
                     <button class="lang-btn" data-lang="en">🇬🇧 EN</button>
@@ -652,7 +616,7 @@
                 <p class="lang-es active-lang">Gestión de mesas, pedidos en tiempo real, mensajería interna y pantalla de cocina. Diseñado como complemento gratuito para Chromis POS.</p>
                 <p class="lang-en">Table management, real-time orders, internal messaging, and kitchen display. Designed as a free add-on for Chromis POS.</p>
                 <div>
-                    <a href="#video" class="btn btn-primary">Ver tutorial</a>
+                    <a href="#tutorial" class="btn btn-primary">Ver tutorial</a>
                     <a href="#donaciones" class="btn btn-secondary">Apoyar proyecto</a>
                 </div>
                 <div class="hero-stats">
@@ -662,7 +626,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="350" height="350" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="80" y="120" width="240" height="200" rx="24" stroke="#07e7f2" stroke-width="2" fill="#1a1a1a"/>
                     <rect x="110" y="160" width="180" height="8" rx="4" fill="#07e7f2" fill-opacity="0.8"/>
                     <rect x="110" y="190" width="180" height="8" rx="4" fill="#ffffff" fill-opacity="0.2"/>
@@ -675,33 +639,31 @@
             </div>
         </section>
 
-        <!-- Video Tutorial Section -->
-        <section id="video" class="video-tutorial">
+        <!-- Tutorial: Instalación y uso -->
+        <section id="tutorial" class="video-tutorial">
             <h3 class="lang-es active-lang">📺 Tutorial: Cómo instalar y usar el sistema</h3>
             <h3 class="lang-en">📺 Tutorial: How to install and use the system</h3>
             <p class="lang-es active-lang">Aprende a levantar pedidos con Chromis POS desde tu celular o tablet</p>
             <p class="lang-en">Learn how to place orders with Chromis POS from your phone or tablet</p>
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/sh2l5bzmMiE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/sh2l5bzmMiE" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
 
         <!-- Características -->
         <section id="caracteristicas" class="features">
             <h2 class="section-title"><span>⚡</span> <span class="lang-es active-lang">Características principales</span><span class="lang-en">Main Features</span></h2>
-            <p class="section-subtitle lang-es active-lang">Todo lo que necesitas para gestionar tu restaurante</p>
-            <p class="section-subtitle lang-en">Everything you need to manage your restaurant</p>
             <div class="features-grid">
-                <div class="feature-card"><div class="feature-icon">📱</div><h3 class="lang-es active-lang">Gestión de Mesas</h3><h3 class="lang-en">Table Management</h3><p class="lang-es active-lang">Control total del estado de cada mesa: libre, ocupada, esperando pedido.</p><p class="lang-en">Full control of each table's status: free, occupied, waiting for order.</p></div>
-                <div class="feature-card"><div class="feature-icon">🛒</div><h3 class="lang-es active-lang">Pedidos en Tiempo Real</h3><h3 class="lang-en">Real-time Orders</h3><p class="lang-es active-lang">Sincronización instantánea entre sala y cocina. Búsqueda de productos.</p><p class="lang-en">Instant sync between front and kitchen. Product search.</p></div>
-                <div class="feature-card"><div class="feature-icon">💬</div><h3 class="lang-es active-lang">Mensajería Interna</h3><h3 class="lang-en">Internal Messaging</h3><p class="lang-es active-lang">Comunicación entre el equipo de trabajo. Eventos y tareas.</p><p class="lang-en">Team communication. Events and tasks scheduling.</p></div>
-                <div class="feature-card"><div class="feature-icon">🍳</div><h3 class="lang-es active-lang">Pantalla de Cocina</h3><h3 class="lang-en">Kitchen Display</h3><p class="lang-es active-lang">Indicadores visuales, notificaciones con sonido, descarte por producto.</p><p class="lang-en">Visual indicators, sound notifications, item-by-item discard.</p></div>
-                <div class="feature-card"><div class="feature-icon">🌐</div><h3 class="lang-es active-lang">Bilingüe</h3><h3 class="lang-en">Bilingual</h3><p class="lang-es active-lang">Español e inglés. Más idiomas próximamente.</p><p class="lang-en">Spanish and English. More languages coming soon.</p></div>
-                <div class="feature-card"><div class="feature-icon">📱</div><h3 class="lang-es active-lang">Responsive</h3><h3 class="lang-en">Responsive</h3><p class="lang-es active-lang">Funciona en móviles, tablets y computadoras.</p><p class="lang-en">Works on mobile, tablets, and computers.</p></div>
+                <div class="feature-card"><div class="feature-icon">📱</div><h3>Gestión de Mesas</h3><p class="lang-es active-lang">Control total del estado de cada mesa: libre, ocupada, esperando pedido.</p><p class="lang-en">Full control of each table's status.</p></div>
+                <div class="feature-card"><div class="feature-icon">🛒</div><h3>Pedidos en Tiempo Real</h3><p class="lang-es active-lang">Sincronización instantánea entre sala y cocina. Búsqueda de productos.</p><p class="lang-en">Instant sync between front and kitchen. Product search.</p></div>
+                <div class="feature-card"><div class="feature-icon">💬</div><h3>Mensajería Interna</h3><p class="lang-es active-lang">Comunicación entre el equipo de trabajo. Eventos y tareas.</p><p class="lang-en">Team communication. Events and tasks.</p></div>
+                <div class="feature-card"><div class="feature-icon">🍳</div><h3>Pantalla de Cocina</h3><p class="lang-es active-lang">Indicadores visuales, notificaciones con sonido, descarte por producto.</p><p class="lang-en">Visual indicators, sound notifications, item-by-item discard.</p></div>
+                <div class="feature-card"><div class="feature-icon">🌐</div><h3>Bilingüe</h3><p class="lang-es active-lang">Español e inglés. Más idiomas próximamente.</p><p class="lang-en">Spanish and English. More languages coming soon.</p></div>
+                <div class="feature-card"><div class="feature-icon">📱</div><h3>Responsive</h3><p class="lang-es active-lang">Funciona en móviles, tablets y computadoras.</p><p class="lang-en">Works on mobile, tablets, and computers.</p></div>
             </div>
         </section>
 
-        <!-- Galería de imágenes -->
+        <!-- Galería completa -->
         <section id="galeria" class="gallery">
             <h2 class="section-title"><span>📸</span> <span class="lang-es active-lang">Capturas de pantalla</span><span class="lang-en">Screenshots</span></h2>
             <p class="section-subtitle lang-es active-lang">Así se ve la aplicación en acción</p>
@@ -719,7 +681,7 @@
             </div>
         </section>
 
-        <!-- Kitchen Preview Section -->
+        <!-- Kitchen Preview (Lo que viene) -->
         <div class="kitchen-preview">
             <h3 class="lang-es active-lang">🍳 Pantalla de Cocina - Lo que viene</h3>
             <h3 class="lang-en">🍳 Kitchen Display - Coming soon</h3>
@@ -741,7 +703,18 @@
             </div>
         </div>
 
-        <!-- Crypto Donations Section -->
+        <!-- Video Pantalla de Cocina -->
+        <section id="kitchen-video" class="video-tutorial">
+            <h3 class="lang-es active-lang">🍳 Pantalla de Cocina para Chromis POS</h3>
+            <h3 class="lang-en">🍳 Kitchen Display for Chromis POS</h3>
+            <p class="lang-es active-lang">Gestión profesional de pedidos en cocina: descarte por producto, tiempos, notificaciones y más.</p>
+            <p class="lang-en">Professional kitchen order management: item-by-item discard, timers, notifications and more.</p>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/PeGgDFadfHE" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- DONACIONES - Fondo blanco resaltado -->
         <section id="donaciones" class="crypto-section">
             <h3>💰 <span class="lang-es active-lang">Apoya el desarrollo</span><span class="lang-en">Support development</span></h3>
             <p class="lang-es active-lang">Si te gusta el proyecto y quieres ayudar a mantenerlo gratuito, considera hacer una donación.</p>
@@ -758,31 +731,28 @@
                     <button class="copy-btn" onclick="copyToClipboard('qryyz9u4hhs6f3e23hwe42fcfmw50pvknsftddzsqm')">📋 Copiar / Copy</button>
                 </div>
             </div>
-            <p class="lang-es active-lang" style="margin-top: 1rem; font-size: 0.9rem;">✨ Tus donaciones ayudan a mantener este proyecto gratuito y en constante mejora. ✨</p>
-            <p class="lang-en" style="margin-top: 1rem; font-size: 0.9rem;">✨ Your donations help keep this project free and continuously improving. ✨</p>
+            <p class="lang-es active-lang">✨ Tus donaciones ayudan a mantener este proyecto gratuito y en constante mejora. ✨</p>
+            <p class="lang-en">✨ Your donations help keep this project free and continuously improving. ✨</p>
         </section>
 
-        <!-- Buy Me a Coffee Section -->
+        <!-- Buy Me a Coffee - Fondo blanco resaltado -->
         <div class="coffee-section">
-            <h3 class="lang-es active-lang">☕ ¿Prefieres algo más sencillo?</h3>
-            <h3 class="lang-en">☕ Prefer something simpler?</h3>
+            <h3>☕ <span class="lang-es active-lang">¿Prefieres algo más sencillo?</span><span class="lang-en">Prefer something simpler?</span></h3>
             <p class="lang-es active-lang">Invítame un café y apoya el desarrollo</p>
             <p class="lang-en">Buy me a coffee and support development</p>
-            <div style="display: flex; justify-content: center; margin-top: 1rem;">
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ayram" data-color="#07e7f2" data-emoji="🍵" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#FFFFFF" data-font-color="#000000" data-coffee-color="#FFDD00"></script>
+            <div style="display: flex; justify-content: center; margin: 1rem 0;">
+                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ayram" data-color="#07e7f2" data-emoji="🍵" data-font="Poppins" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00"></script>
             </div>
         </div>
 
-        <!-- Próximamente / Newsletter -->
+        <!-- Newsletter -->
         <section class="coming-soon">
             <h2>🚀 <span class="lang-es active-lang">Próximamente disponible</span><span class="lang-en">Coming soon</span></h2>
             <p class="lang-es active-lang">Déjame tu email y te avisaré cuando la aplicación esté lista para descargar.</p>
-            <p class="lang-en">Leave your email and I'll notify you when the app is ready for download.</p>
+            <p class="lang-en">Leave your email and I'll notify you when the app is ready.</p>
             <button id="openFormBtn" class="btn-notify">📧 Recibir notificación / Get notified</button>
-            <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">🔒 Sin spam. Solo un email cuando lance el proyecto.</p>
         </section>
 
-        <!-- Tecnologías -->
         <div class="tech-stack">
             <h3>⚙️ Tech Stack</h3>
             <div class="tech-badges">
@@ -790,33 +760,23 @@
                 <span class="tech-badge">Express.js</span>
                 <span class="tech-badge">PostgreSQL / MySQL</span>
                 <span class="tech-badge">React</span>
-                <span class="tech-badge">REST API</span>
                 <span class="tech-badge">WebSockets</span>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.85rem; color: #a0a0a0;">Complemento gratuito para Chromis POS | Free add-on for Chromis POS</p>
         </div>
     </div>
 
-    <!-- Modal para imágenes -->
-    <div id="imageModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeImageModal">&times;</span>
-            <img id="modalImage" class="modal-img" src="" alt="Screenshot">
-        </div>
-    </div>
-
-    <!-- Google Forms Modal -->
-    <div id="googleFormModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal" id="closeFormModal">&times;</span>
-            <iframe id="googleFormIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdC8o7IQAEtnfw4RZNSrpz48EvOevg8fiTsSsuIr2UNH8dlmA/viewform?embedded=true" frameborder="0" style="width:100%; height:550px; border:none;"></iframe>
-        </div>
-    </div>
+    <!-- Modales -->
+    <div id="imageModal" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeModal()">&times;</span><img id="modalImage" class="modal-img"></div></div>
+    <div id="googleFormModal" class="modal"><div class="modal-content"><span class="close-modal" onclick="closeFormModal()">&times;</span><iframe id="googleFormIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdC8o7IQAEtnfw4RZNSrpz48EvOevg8fiTsSsuIr2UNH8dlmA/viewform?embedded=true" style="width:100%; height:500px; border:none;"></iframe></div></div>
 
     <footer class="footer">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/LuxSystem1" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/luxsystem_1" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/luxsystem_1" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
         <p>&copy; 2026 Ayram Martinez — Desarrollador de Software</p>
-        <p style="margin-top: 0.6rem; font-size: 0.85rem;">Creando herramientas gratuitas para la industria gastronómica | Building free tools for the food & beverage industry</p>
-        <p style="margin-top: 0.6rem; font-size: 0.75rem;">BTC: 1DBbGNDA7BbitWsZwvEUJdHNMRrcNMpKfK | BCH: qryyz9u4hhs6f3e23hwe42fcfmw50pvknsftddzsqm</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem;">BTC: 1DBbGNDA7BbitWsZwvEUJdHNMRrcNMpKfK | BCH: qryyz9u4hhs6f3e23hwe42fcfmw50pvknsftddzsqm</p>
     </footer>
 
     <script>
@@ -824,90 +784,33 @@
         const langButtons = document.querySelectorAll('.lang-btn');
         const esElements = document.querySelectorAll('.lang-es');
         const enElements = document.querySelectorAll('.lang-en');
-        
         function setLanguage(lang) {
             if (lang === 'es') {
                 esElements.forEach(el => el.classList.add('active-lang'));
                 enElements.forEach(el => el.classList.remove('active-lang'));
-                langButtons.forEach(btn => {
-                    if (btn.dataset.lang === 'es') btn.classList.add('active');
-                    else btn.classList.remove('active');
-                });
+                langButtons.forEach(btn => btn.dataset.lang === 'es' ? btn.classList.add('active') : btn.classList.remove('active'));
             } else {
                 esElements.forEach(el => el.classList.remove('active-lang'));
                 enElements.forEach(el => el.classList.add('active-lang'));
-                langButtons.forEach(btn => {
-                    if (btn.dataset.lang === 'en') btn.classList.add('active');
-                    else btn.classList.remove('active');
-                });
+                langButtons.forEach(btn => btn.dataset.lang === 'en' ? btn.classList.add('active') : btn.classList.remove('active'));
             }
         }
-        
-        langButtons.forEach(btn => {
-            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
-        });
-        
-        // Modal para imágenes
-        const imageModal = document.getElementById('imageModal');
-        const modalImg = document.getElementById('modalImage');
-        const closeImageModal = document.getElementById('closeImageModal');
-        
-        window.openModal = function(imgSrc) {
-            imageModal.style.display = 'block';
-            modalImg.src = imgSrc;
-            document.body.style.overflow = 'hidden';
-        };
-        
-        closeImageModal.onclick = () => {
-            imageModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        };
-        
-        // Copiar al portapapeles
-        window.copyToClipboard = function(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                alert('✅ Dirección copiada / Address copied');
-            });
-        };
-        
-        // Google Forms Modal
+        langButtons.forEach(btn => btn.addEventListener('click', () => setLanguage(btn.dataset.lang)));
+
+        // Modal functions
+        function openModal(src) { let modal = document.getElementById('imageModal'); document.getElementById('modalImage').src = src; modal.style.display = 'block'; }
+        function closeModal() { document.getElementById('imageModal').style.display = 'none'; }
+        function copyToClipboard(text) { navigator.clipboard.writeText(text).then(() => alert('✅ Dirección copiada / Address copied')); }
+
         const formModal = document.getElementById('googleFormModal');
-        const openFormBtn = document.getElementById('openFormBtn');
-        const closeFormBtn = document.getElementById('closeFormModal');
-        
-        openFormBtn.onclick = () => {
-            formModal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        };
-        
-        closeFormBtn.onclick = () => {
-            formModal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        };
-        
-        // Cerrar modales al hacer clic fuera
-        window.onclick = (event) => {
-            if (event.target === imageModal) {
-                imageModal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-            if (event.target === formModal) {
-                formModal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        };
-        
-        // Smooth scrolling
+        document.getElementById('openFormBtn').onclick = () => { formModal.style.display = 'block'; };
+        function closeFormModal() { formModal.style.display = 'none'; }
+        window.onclick = (e) => { if (e.target === formModal) formModal.style.display = 'none'; if (e.target === document.getElementById('imageModal')) closeModal(); };
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if(target) target.scrollIntoView({ behavior: 'smooth' });
-            });
+            anchor.addEventListener('click', function(e) { e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); });
         });
     </script>
-    
-    <!-- Buy Me a Coffee Widget -->
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="ayram" data-description="Support me on Buy me a coffee!" data-message="" data-color="#07e7f2" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 </body>
 </html>
